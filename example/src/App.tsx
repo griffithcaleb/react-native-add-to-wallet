@@ -1,18 +1,13 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-add-to-wallet';
+import { StyleSheet, View } from 'react-native';
+import { AddToWalletButton, openWallet } from 'react-native-add-to-wallet';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
+  
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <AddToWalletButton onPress={openWallet} />
     </View>
   );
 }

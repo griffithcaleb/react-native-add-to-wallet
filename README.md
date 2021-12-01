@@ -1,6 +1,6 @@
 # react-native-add-to-wallet
 
-Bridge for add to wallet functionality'
+Simple RN bridge for add to wallet button and open wallet method.
 
 ## Installation
 
@@ -11,12 +11,8 @@ npm install react-native-add-to-wallet
 ## Usage
 
 ```js
-import { multiply } from "react-native-add-to-wallet";
+import { openWallet, AddToWalletButton } from "react-native-add-to-wallet";
 
-// ...
-
-const result = await multiply(3, 7);
-```
 
 ## Contributing
 

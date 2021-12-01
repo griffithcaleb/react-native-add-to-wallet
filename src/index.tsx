@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+import AddToWalletButton from './AddToWalletButton'
 
 const LINKING_ERROR =
   `The package 'react-native-add-to-wallet' doesn't seem to be linked. Make sure: \n\n` +
@@ -17,6 +18,8 @@ const AddToWallet = NativeModules.AddToWallet
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return AddToWallet.multiply(a, b);
+export function openWallet(): void {
+  return AddToWallet.openWallet();
 }
+
+export { AddToWalletButton }

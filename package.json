@@ -2,24 +2,24 @@
   "name": "react-native-add-to-wallet",
   "version": "0.1.0",
   "description": "Bridge for add to wallet functionality'",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.tsx",
   "source": "src/index",
   "files": [
     "src",
     "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
     "android",
     "ios",
     "cpp",
     "react-native-add-to-wallet.podspec",
     "!lib/typescript/example",
     "!android/build",
-    "!ios/build",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__"
+    "!ios/build"
   ],
   "scripts": {
     "test": "jest",
@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "http://www.google.com",
-  "author": "cg <caleb.griffith@foldpp.com> (http://www.google.com)",
+  "repository": "http://griffithcaleb/react-native-add-to-wallet.git",
+  "author": "cg <caleb.griffith@foldpp.com> (griffithcaleb/react-native-add-to-wallet.git)",
   "license": "MIT",
   "bugs": {
-    "url": "http://www.google.com/issues"
+    "url": "http://griffithcaleb/react-native-add-to-wallet.git/issues"
   },
-  "homepage": "http://www.google.com#readme",
+  "homepage": "http://griffithcaleb/react-native-add-to-wallet.git#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -136,12 +136,7 @@
     "targets": [
       "commonjs",
       "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
+      "typescript"
     ]
   }
 }

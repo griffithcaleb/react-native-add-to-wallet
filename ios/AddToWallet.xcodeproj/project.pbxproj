@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* AddToWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AddToWallet.m */; };
-		F4FF95D7245B92E800C19C63 /*  AddToWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  AddToWallet.swift */; };
-
+		C2089362275805FC00232495 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2089361275805FC00232495 /* PassKit.framework */; };
+		F4FF95D7245B92E800C19C63 /* AddToWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* AddToWallet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +25,10 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libAddToWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAddToWallet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
 		B3E7B5891CC2AC0600A0062D /* AddToWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToWallet.m; sourceTree = "<group>"; };
+		C2089361275805FC00232495 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/iOSSupport/System/Library/Frameworks/PassKit.framework; sourceTree = DEVELOPER_DIR; };
 		F4FF95D5245B92E700C19C63 /* AddToWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddToWallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* AddToWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWallet.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2089362275805FC00232495 /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +54,20 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
 				F4FF95D6245B92E800C19C63 /* AddToWallet.swift */,
 				B3E7B5891CC2AC0600A0062D /* AddToWallet.m */,
 				F4FF95D5245B92E700C19C63 /* AddToWallet-Bridging-Header.h */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
+				C2089360275805FC00232495 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		C2089360275805FC00232495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2089361275805FC00232495 /* PassKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				F4FF95D7245B92E800C19C63 /* AddToWallet.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* AddToWallet.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +240,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AddToWallet;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "AddToWallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
@@ -259,10 +259,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AddToWallet;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "AddToWallet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};
