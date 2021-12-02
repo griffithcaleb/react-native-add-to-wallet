@@ -1,13 +1,19 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import { AddToWalletButton, openWallet } from 'react-native-add-to-wallet';
 
 export default function App() {
   
   return (
     <View style={styles.container}>
-      <AddToWalletButton onPress={openWallet} />
+      {
+        // ios only
+        Platform.OS === 'ios' && (
+          <AddToWalletButton onPress={openWallet} />
+        )
+      } 
+     
     </View>
   );
 }
