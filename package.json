@@ -1,6 +1,6 @@
 {
   "name": "react-native-add-to-wallet",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Simple RN bridge for add to wallet button and open wallet method.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
