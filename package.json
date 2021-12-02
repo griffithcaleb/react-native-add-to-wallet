@@ -1,7 +1,7 @@
 {
   "name": "react-native-add-to-wallet",
-  "version": "0.1.0",
-  "description": "Bridge for add to wallet functionality'",
+  "version": "0.1.4",
+  "description": "Simple RN bridge for add to wallet button and open wallet method.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
@@ -36,7 +36,7 @@
     "ios",
     "android"
   ],
-  "repository": "http://griffithcaleb/react-native-add-to-wallet.git",
+  "repository": "http://github.com/griffithcaleb/react-native-add-to-wallet.git",
   "author": "cg <caleb.griffith@foldpp.com> (griffithcaleb/react-native-add-to-wallet.git)",
   "license": "MIT",
   "bugs": {
